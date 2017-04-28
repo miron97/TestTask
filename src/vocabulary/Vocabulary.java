@@ -1,13 +1,9 @@
 package vocabulary;
 
-import java.io.File;
 import java.io.*;
 import java.util.*;
 
-/**
- *
- * @author 
- */
+
 public class Vocabulary {
 
    public static Map<String, Integer> vocabulary = new TreeMap<>();
@@ -36,7 +32,6 @@ public class Vocabulary {
         {   
             for(Map.Entry<String, Integer> item : map.entrySet()){
                 pw.write(item.getKey() + " - " + item.getValue() + "\n");
-                
             }
             pw.flush();
         }catch(IOException e){
